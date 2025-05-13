@@ -6,10 +6,10 @@ const PublicationSchema = Schema({
         required: [true, 'Title is required'],
         maxLength: [25, 'Cant be overcome 25 characters']
     },
-    curse:{
-        type: Schema.Types.ObjectId,
-        ref: 'Category',
-        required: [true, 'The pulication need a curse']
+    course:{
+        type: String,
+        required: true,
+        enum: ['Technology', 'Workshop','Tics']
     },
     mainText:{
         type: String,
@@ -19,6 +19,9 @@ const PublicationSchema = Schema({
         type: Schema.Types.ObjectId,
         ref: 'Comment'
     }],
+    image:{
+        type: String
+    },
     status:{
         type: Boolean,
         default: true

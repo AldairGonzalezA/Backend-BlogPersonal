@@ -6,7 +6,7 @@ export const createPublication = async (req, res) => {
 
         const publication = await Publication.create({
             title: data.title,
-            curse: data.curse,
+            course: data.course,
             mainText: data.mainText,
             image: data.image
         })
@@ -28,8 +28,6 @@ export const getPublications = async (req = request, res = response) => {
             Publication.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
-                .populate('category', 'name')
-                .populate('publisher', 'username')
                 .populate({
                     path: 'comments',
                     match: {status: true},

@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "80ebb727-e7e4-4856-af25-27c0a0ce66f5",
+		"name": "BlogPersonal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42082102"
+	},
+	"item": [
+		{
+			"name": "GetCourse",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blog/v1/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v1",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SavePublication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Prueba\",\r\n    \"course\":\"Practice\",\r\n    \"mainText\":\"Publicacion de Prueba\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blog/v1/publication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v1",
+						"publication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPublication",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CreateComment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

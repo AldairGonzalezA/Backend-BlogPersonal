@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "68243362b89bb219e12fc525"
+  },
+  "title": "Prueba",
+  "course": "Practice",
+  "mainText": "Publicacion de Prueba",
+  "comments": [
+    {
+      "$oid": "6824349aa6e61d78b26a9bda"
+    }
+  ],
+  "status": true,
+  "__v": 0
+}]

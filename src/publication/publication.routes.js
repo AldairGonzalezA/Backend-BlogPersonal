@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from 'express-validator';
-import { getPublications, searchPublication, createPublication, updatePublication, deletePublication } from "./publication.controller";
-import { validateFields } from "../middlewares/validateFields";
+import { getPublications, searchPublication, createPublication, updatePublication, deletePublication } from "./publication.controller.js";
+import { validateFields } from "../middlewares/validateFields.js";
 
 const router = Router();
 

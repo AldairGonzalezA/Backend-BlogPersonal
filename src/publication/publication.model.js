@@ -9,7 +9,7 @@ const PublicationSchema = Schema({
     course:{
         type: String,
         required: true,
-        enum: ['Technology', 'Workshop','Tics']
+        enum: ['Technology', 'Workshop','Practice']
     },
     mainText:{
         type: String,

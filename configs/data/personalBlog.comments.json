@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "6824349aa6e61d78b26a9bda"
+  },
+  "publisher": "Anonymous",
+  "text": "Comentario de Prueba",
+  "status": true,
+  "__v": 0
+}]

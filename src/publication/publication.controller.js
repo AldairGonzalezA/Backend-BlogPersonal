@@ -1,4 +1,5 @@
 import Publication from './publication.model.js';
+import Course from '../course/course.model.js';
 
 export const createPublication = async (req, res) => {
     try {
@@ -20,8 +21,15 @@ export const createPublication = async (req, res) => {
 
 export const getPublications = async (req = request, res = response) => {
     try {
-        const { limite = 10, desde = 0} = req.query;
-        const query = {status: true};
+        const {id} = req.params;
+        const {limite = 10, desde = 0} = req.query;
+        const course = await Course.findById(id);
+
+         const query = {
+            status: true,
+            course: course.course
+        }
+
 
         const [total, publications] = await Promise.all([
             Publication.countDocuments(query),
@@ -30,8 +38,8 @@ export const getPublications = async (req = request, res = response) => {
                 .limit(Number(limite))
                 .populate({
                     path: 'comments',
-                    match: {status: true},
-                })
+                    match: { status: true },
+                }),
         ]);
 
         res.status(200).json({

@@ -5,7 +5,7 @@ import { validateFields } from "../middlewares/validateFields.js";
 
 const router = Router();
 
-router.get("/", getPublications)
+router.get("/:id", getPublications)
 
 router.get(
     "/findPublication/:id",

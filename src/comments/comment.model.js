@@ -9,6 +9,10 @@ const commentSchema = Schema({
         type: 'String',
         required: [true, 'The comment need a text']
     },
+    datePublication:{
+        type: Date,
+        default: Date.now
+    },
     status:{
         type: Boolean,
         default: true

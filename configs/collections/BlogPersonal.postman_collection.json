@@ -37,7 +37,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"Prueba\",\r\n    \"course\":\"Practice\",\r\n    \"mainText\":\"Publicacion de Prueba\"\r\n\r\n}",
+					"raw": "{\r\n    \"title\":\"Cambios en Zona\",\r\n    \"course\":\"Workshop\",\r\n    \"mainText\":\"Revisar sus zonas para realizar cambios si son necesarios.\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,15 +64,109 @@
 			"name": "GetPublication",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blog/v1/publication/682431362bbb2d4dff5249c3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"682431362bbb2d4dff5249c3"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "CreateComment",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Aviso Importante\",\r\n    \"publisher\":\"Miguel\",\r\n    \"text\":\"Cuanto vale la Tarea\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blog/v1/publication/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePublication",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Cambios en Zona\",\r\n    \"course\":\"Workshop\",\r\n    \"mainText\":\"Revisar sus zonas para realizar cambios si son necesarios.\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/blog/v1/publication/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePublication",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Activacion de PMA\",\r\n    \"course\":\"Workshop\",\r\n    \"mainText\":\"Revisar sus zonas para realizar cambios si son necesarios.\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blog/v1/publication/682aae1470155cd8eca888f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"v1",
+						"publication",
+						"682aae1470155cd8eca888f5"
+					]
+				}
 			},
 			"response": []
 		}

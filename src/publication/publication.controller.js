@@ -10,13 +10,12 @@ export const createPublication = async (req, res) => {
             course: data.course,
             mainText: data.mainText,
             image: data.image,
-            datePublications: Date.now,
         })
 
         return res.status(200).json(publication);
     } catch (error) {
         console.log(error)
-        return res.status(500).json('Error crating publication')
+        return res.status(500).json('Error crating publication',error)
     }
 }
 
@@ -62,7 +61,6 @@ export const searchPublication = async (req, res) =>{
         const { id } = req.params;
         const publication = await Publication.findById(id)
             .populate('publisher', 'username') 
-            .populate('category', 'name')
             .populate({
             path: 'comments',   
             select: 'publisher text',  
@@ -92,36 +90,12 @@ export const searchPublication = async (req, res) =>{
 export const updatePublication = async (req, res = response) =>{
     try {
         const { id } = req.params;
-        const user = await Publication.findById(id).select('publisher'); 
-        const autheticatedUser = req.usuario;
-        const {_id, publisher, category, ...data} = req.body
-        const newCategory = await Category.findOne({name: category})
-        
-        if(autheticatedUser._id.toString() === user.publisher.toString()){
-            if (category) {
-                const categoryFound = await Category.findOne({ name: category });
-                if (!categoryFound) {
-                    return res.status(400).json({
-                        success: false,
-                        msg: 'Category not found'
-                    });
-                }
-                data.category = categoryFound._id; 
-            }
-    
-            
-            const publication = await Publication.findByIdAndUpdate(id, data, { new: true });
+        const {_id, ...data} = req.body;
+        const publication = await Publication.findByIdAndUpdate(id, data, {new: true})
 
-            return res.status(200).json({
-                success: true,
-                msg: 'Publication update successfully!',
-                publication
-            })
-        }
-
-        return res.status(403).json({
-            success: false,
-            msg: 'Only the user can edit their post'
+        return res.status(200).json({
+            publication,
+            msg: 'Publication update successdully!!'
         })
     } catch (error) {
         res.status(500).json({
@@ -135,28 +109,13 @@ export const updatePublication = async (req, res = response) =>{
 export const deletePublication = async (req, res) => {
     try {
             const { id } = req.params;
-            const user = await Publication.findById(id).select('publisher');
-            const autheticatedUser = req.usuario;
-
-            if(autheticatedUser._id.toString() === user.publisher.toString()){
-                const publication = await Publication.findByIdAndUpdate(id, {status:false}, {new: true});
-                await User.findByIdAndUpdate(publication.publisher, {
-                    $pull: {publications: updatePublication._id}
-                });
-                
-                return res.status(200).json({
-                    success: true,
-                    msg:'Publication deleted successfully',
-                    publication
-                })
-                
-            }
-
-            return res.status(403).json({
-                success: false,
-                msg:'Only the user can delete their post'
-            })
+            const publication = await Publication.findByIdAndUpdate(id, {status: false}, {new: true})
             
+
+            return res.status(200).json({
+                publication,
+                msg: 'Publication delete Successfully!!'
+            })
     } catch (error) {
         res.status(500).json({
             success: false,

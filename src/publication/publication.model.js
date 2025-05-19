@@ -24,6 +24,7 @@ const PublicationSchema = Schema({
     },
     datePublications:{
         type: Date,
+        default: Date.now
     },
     status:{
         type: Boolean,

@@ -8,8 +8,193 @@
   "comments": [
     {
       "$oid": "6824349aa6e61d78b26a9bda"
+    },
+    {
+      "$oid": "68281c8fd014c456581e518c"
+    },
+    {
+      "$oid": "68281ce0d014c456581e5196"
+    },
+    {
+      "$oid": "6828226297c5ef6902ba9833"
+    },
+    {
+      "$oid": "6828303497c5ef6902ba99c0"
+    },
+    {
+      "$oid": "6828314b97c5ef6902ba99d6"
     }
   ],
   "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682a750c1135d46e118a507e"
+  },
+  "title": "Recordatorio Almacenadora",
+  "course": "Practice",
+  "mainText": "Jovenes, recuerden de enviar sus proyectos antes del dia lunes.",
+  "comments": [
+    {
+      "$oid": "682a984969edc41b67c553b1"
+    },
+    {
+      "$oid": "682a985c69edc41b67c553bf"
+    },
+    {
+      "$oid": "682a9a0034da796687224818"
+    }
+  ],
+  "status": true,
+  "dataPublications": {
+    "$date": "2025-05-19T00:02:20.899Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682a76161f2b98036b5eab64"
+  },
+  "title": "Recordatorio Ejercicios",
+  "course": "Practice",
+  "mainText": "Jovenes, recuerden de enviar sus ejercicios lo mas pronto posible.",
+  "comments": [],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T00:06:46.133Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682a76b91f2b98036b5eab8c"
+  },
+  "title": "Aviso Importante",
+  "course": "Practice",
+  "mainText": "Por motivos de plataforma la prueba se cambia para el dia vierner.",
+  "comments": [
+    {
+      "$oid": "682ab06770155cd8eca8890b"
+    },
+    {
+      "$oid": "682ab07570155cd8eca88913"
+    },
+    {
+      "$oid": "682ab08470155cd8eca8891b"
+    },
+    {
+      "$oid": "682ab0e470155cd8eca88944"
+    },
+    {
+      "$oid": "682ab16170155cd8eca88956"
+    },
+    {
+      "$oid": "682ab17c70155cd8eca8895e"
+    }
+  ],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T00:09:29.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aad9470155cd8eca888ec"
+  },
+  "title": "Aviso Importante",
+  "course": "Technology",
+  "mainText": "Por motivos de plataforma la prueba se cambia para el dia viernes.",
+  "comments": [],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T04:03:32.288Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aadc070155cd8eca888ef"
+  },
+  "title": "Investigacion",
+  "course": "Technology",
+  "mainText": "Realizar una investacion sobre las RAM.",
+  "comments": [
+    {
+      "$oid": "682ab09c70155cd8eca88923"
+    }
+  ],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T04:04:16.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aade170155cd8eca888f2"
+  },
+  "title": "Examen Final",
+  "course": "Technology",
+  "mainText": "Recuerden que se acerca el examen final, repasen por favor.",
+  "comments": [
+    {
+      "$oid": "682ab0ac70155cd8eca8892c"
+    },
+    {
+      "$oid": "682ab0ba70155cd8eca88935"
+    }
+  ],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T04:04:49.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aae1470155cd8eca888f5"
+  },
+  "title": "Aviso Importante",
+  "course": "Workshop",
+  "mainText": "Se cambia la fecha del examen final, esten atentos.",
+  "comments": [],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T04:05:40.954Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682aae3c70155cd8eca888f8"
+  },
+  "title": "Propuesta de Proyecto",
+  "course": "Workshop",
+  "mainText": "El dia miercoles deben de presentar su propuesta de proyecto final.",
+  "comments": [
+    {
+      "$oid": "682ab19870155cd8eca88966"
+    }
+  ],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T04:06:20.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab27970155cd8eca88974"
+  },
+  "title": "Cambios en Zona",
+  "course": "Workshop",
+  "mainText": "Revisar sus zonas para realizar cambios si son necesarios.",
+  "comments": [],
+  "status": true,
+  "datePublications": {
+    "$date": "2025-05-19T04:24:25.554Z"
+  },
   "__v": 0
 }]

@@ -6,4 +6,232 @@
   "text": "Comentario de Prueba",
   "status": true,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68281c50d014c456581e5186"
+  },
+  "publisher": "Anonymous",
+  "text": "Mucha Tarea Profe",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68281c86d014c456581e5189"
+  },
+  "publisher": "Anonymous",
+  "text": "Mucha Tarea Profe",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68281c8fd014c456581e518c"
+  },
+  "publisher": "Anonymous",
+  "text": "Mucha Tarea Profe",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68281ce0d014c456581e5196"
+  },
+  "publisher": "Joaquin",
+  "text": "Para cuando es la tarea",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6828226297c5ef6902ba9833"
+  },
+  "publisher": "Miguel",
+  "text": "Cuanto vale la Tarea",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-17T05:45:06.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6828303497c5ef6902ba99c0"
+  },
+  "publisher": "Santiago",
+  "text": "Esta bien Profesor",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-17T06:44:04.128Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6828314b97c5ef6902ba99d6"
+  },
+  "publisher": "",
+  "text": "Ok profe",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-17T06:48:43.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682a984969edc41b67c553b1"
+  },
+  "publisher": "",
+  "text": "Esta bien profe",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T02:32:41.627Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682a985c69edc41b67c553bf"
+  },
+  "publisher": "Miguel",
+  "text": "Enterado Profe",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T02:33:00.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682a9a0034da796687224818"
+  },
+  "publisher": "Anonymous",
+  "text": "De mas tiempo",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T02:40:00.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab06770155cd8eca8890b"
+  },
+  "publisher": "Anonymous",
+  "text": "Esta bien Profesor",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:15:35.194Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab07570155cd8eca88913"
+  },
+  "publisher": "Andres",
+  "text": "OK!!!",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:15:49.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab08470155cd8eca8891b"
+  },
+  "publisher": "Santiago",
+  "text": "Que Bendicion!!",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:16:04.509Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab09c70155cd8eca88923"
+  },
+  "publisher": "Anonymous",
+  "text": "Otra tarea??",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:16:28.900Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab0ac70155cd8eca8892c"
+  },
+  "publisher": "Josue",
+  "text": "De acuerdo",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:16:44.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab0ba70155cd8eca88935"
+  },
+  "publisher": "Anonymous",
+  "text": "El que estudia es por que duda de sus conocimientos",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:16:58.594Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab0e470155cd8eca88944"
+  },
+  "publisher": "Santiago",
+  "text": "Ok profe",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:17:40.623Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab16170155cd8eca88956"
+  },
+  "publisher": "Carlos",
+  "text": "Gracias Profesor",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:19:45.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab17c70155cd8eca8895e"
+  },
+  "publisher": "Carlos",
+  "text": "Esta bien Profesor",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:20:12.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682ab19870155cd8eca88966"
+  },
+  "publisher": "Carlos",
+  "text": "Estamos en eso ",
+  "status": true,
+  "datePublication": {
+    "$date": "2025-05-19T04:20:40.105Z"
+  },
+  "__v": 0
 }]

@@ -9,7 +9,8 @@ export const createPublication = async (req, res) => {
             title: data.title,
             course: data.course,
             mainText: data.mainText,
-            image: data.image
+            image: data.image,
+            datePublications: Date.now,
         })
 
         return res.status(200).json(publication);

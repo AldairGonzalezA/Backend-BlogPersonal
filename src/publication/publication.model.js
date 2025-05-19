@@ -22,9 +22,8 @@ const PublicationSchema = Schema({
     image:{
         type: String
     },
-    dataPublications:{
+    datePublications:{
         type: Date,
-        default: Date.now
     },
     status:{
         type: Boolean,
